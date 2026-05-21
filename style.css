@@ -164,3 +164,41 @@ footer {
     font-size: 34px;
   }
 }
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  min-height: 80vh;
+}
+
+.hero-image img {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255,255,255,0.1);
+
+  box-shadow:
+    0 0 60px rgba(37,99,235,0.35);
+
+  transition: 0.4s;
+}
+
+.hero-image img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 950px) {
+
+  .hero-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 260px;
+    height: 260px;
+  }
+
+}
