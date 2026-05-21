@@ -418,3 +418,22 @@ body.light-mode .close-btn {
 body.light-mode footer {
   color: #475569;
 }
+.site-controls select {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.site-controls select option {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+body.light-mode .site-controls select {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+body.light-mode .site-controls select option {
+  background: #ffffff;
+  color: #0f172a;
+}
