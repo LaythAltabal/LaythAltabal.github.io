@@ -95,9 +95,19 @@ languageSelect.addEventListener("change", (event) => {
   setLanguage(event.target.value);
 });
 function openModal(id) {
-  document.getElementById(id).classList.add("active");
+  const modal = document.getElementById(id);
+
+  if (modal) {
+    modal.classList.add("active");
+  } else {
+    console.error("Modal not found:", id);
+  }
 }
 
 function closeModal(id) {
-  document.getElementById(id).classList.remove("active");
+  const modal = document.getElementById(id);
+
+  if (modal) {
+    modal.classList.remove("active");
+  }
 }
