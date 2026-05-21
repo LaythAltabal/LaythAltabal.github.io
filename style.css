@@ -213,32 +213,67 @@ footer {
   }
 
 }
-.skill-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 50px;
-}
-
-.skill-nav a {
+.skill-nav button {
   padding: 12px 20px;
   border-radius: 12px;
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.08);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
   transition: 0.3s;
 }
 
-.skill-nav a:hover {
+.skill-nav button:hover {
   background: #2563eb;
   transform: translateY(-2px);
 }
 
-.skill-group {
-  margin-bottom: 30px;
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.8);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
-.skill-group:target .card {
-  border-color: #38bdf8;
 
-  box-shadow:
-    0 0 25px rgba(56,189,248,0.25);
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  max-width: 650px;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+.modal-content h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.modal-content li {
+  color: #cbd5e1;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
 }

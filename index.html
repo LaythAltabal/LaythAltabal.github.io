@@ -74,7 +74,7 @@
       <h1>
         Hi, ich bin Layth.
       </h1>
-
+<section class="hidden" id="sk
       <p>
   Senior IT Specialist mit Erfahrung in moderner IT-Infrastruktur,
   User Support und technischen Lösungen sowie wachsendem Fokus
@@ -105,30 +105,85 @@
 
   </section>
 
-  <section id="skills">
+  <section class="hidden" id="skills">
+  <h2 class="section-title">Skills</h2>
 
-    <h2 class="section-title">Skills</h2>
-    <div class="skill-nav">
+  <div class="skill-nav">
+    <button onclick="openModal('securityModal')">Security</button>
+    <button onclick="openModal('cloudModal')">Cloud</button>
+    <button onclick="openModal('networkModal')">Networking</button>
+    <button onclick="openModal('automationModal')">Automation</button>
+    <button onclick="openModal('supportModal')">Support</button>
+  </div>
+</section>
 
-  <a href="#security">Security</a>
-  <a href="#cloud">Cloud</a>
-  <a href="#network">Networking</a>
-  <a href="#automation">Automation</a>
-  <a href="#support">Support</a>
-
+<div id="securityModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="closeModal('securityModal')">×</button>
+    <h3>IT Security & Compliance</h3>
+    <ul>
+      <li>Security Policies und Compliance Lifecycle</li>
+      <li>Patch- und Security-Management</li>
+      <li>Application Control und Application Blocking</li>
+      <li>BTPM Security Platform Administration</li>
+      <li>Endpoint Protection und Troubleshooting</li>
+    </ul>
+  </div>
 </div>
 
-    <div class="cards">
-
-  <div class="card">
-    <div id="cloud" class="skill-group"></div><h3>Cloud & Infrastructure</h3></div>
-
-    <p>
-      Verwaltung hybrider IT-Infrastrukturen mit
-      Microsoft Azure, Entra ID, Virtual Machines
-      und Azure Virtual Desktop.
-    </p>
+<div id="cloudModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="closeModal('cloudModal')">×</button>
+    <h3>Cloud & Infrastructure</h3>
+    <ul>
+      <li>Microsoft Azure Infrastruktur</li>
+      <li>Azure Virtual Machines und Azure Virtual Desktop</li>
+      <li>Microsoft Entra ID</li>
+      <li>Hybride IT-Infrastrukturen</li>
+      <li>Cloud Monitoring und Systembetrieb</li>
+    </ul>
   </div>
+</div>
+
+<div id="networkModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="closeModal('networkModal')">×</button>
+    <h3>Networking</h3>
+    <ul>
+      <li>VPN, VLAN und Routing-Grundlagen</li>
+      <li>Cisco und Meraki Administration</li>
+      <li>Netzwerkdiagnose und Troubleshooting</li>
+      <li>Standortintegration und Infrastrukturaufbau</li>
+    </ul>
+  </div>
+</div>
+
+<div id="automationModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="closeModal('automationModal')">×</button>
+    <h3>PowerShell & Automation</h3>
+    <ul>
+      <li>PowerShell Automatisierung</li>
+      <li>Deployment Automation</li>
+      <li>Remediation Scripts</li>
+      <li>Optimierung administrativer Prozesse</li>
+    </ul>
+  </div>
+</div>
+
+<div id="supportModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="closeModal('supportModal')">×</button>
+    <h3>Support & IT Operations</h3>
+    <ul>
+      <li>2nd/3rd Level Support</li>
+      <li>Root Cause Analyse komplexer Incidents</li>
+      <li>ServiceNow Incident, Request und Change Management</li>
+      <li>SLA-Steuerung und Ticketbearbeitung</li>
+      <li>Rollouts, Migrationen und internationale Zusammenarbeit</li>
+    </ul>
+  </div>
+</div>
 
   <div class="card">
     <h3>Microsoft Intune & Endpoint Management</h3>
