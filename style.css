@@ -202,3 +202,26 @@ footer {
   }
 
 }
+.skill-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+
+.skill-nav a {
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.skill-nav a:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.skill-group {
+  margin-bottom: 30px;
+}
