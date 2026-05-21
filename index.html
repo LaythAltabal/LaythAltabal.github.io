@@ -19,20 +19,20 @@
   <header class="hero">
     <nav>
       <h2 class="logo-text">
-  Senior IT Specialist • Cloud Infrastructure • IT Security
-</h2>
+        Senior IT Specialist • Cloud Infrastructure • IT Security
+      </h2>
 
       <div class="site-controls">
-  <button id="themeToggle">🌙</button>
+        <button id="themeToggle">🌙</button>
 
-  <select id="languageSelect">
-    <option value="de">DE</option>
-    <option value="en">EN</option>
-    <option value="ar">AR</option>
-  </select>
-</div>
+        <select id="languageSelect">
+          <option value="de">DE</option>
+          <option value="en">EN</option>
+          <option value="ar">AR</option>
+        </select>
+      </div>
 
-<div class="nav-links">
+      <div class="nav-links">
         <a href="#about" data-i18n="nav_about">Über mich</a>
         <a href="#skills" data-i18n="nav_skills">Skills</a>
         <a href="#projekte" data-i18n="nav_projects">Projekte</a>
@@ -42,10 +42,9 @@
 
     <div class="hero-wrapper">
       <div class="hero-content">
-
         <h1 data-i18n="hero_title">
-  Senior IT Specialist & Cloud Infrastructure Professional
-</h1>
+          Senior IT Specialist & Cloud Infrastructure Professional
+        </h1>
 
         <p data-i18n="hero_description">
           Senior IT Specialist mit über 5 Jahren Erfahrung in IT-Infrastruktur,
@@ -55,24 +54,11 @@
         </p>
 
         <div class="hero-buttons">
-
-  <a class="button" href="#about" data-i18n="nav_about">
-    Über mich
-  </a>
-
-  <a class="button" href="#skills" data-i18n="nav_skills">
-    Skills
-  </a>
-
-  <a class="button" href="#projekte" data-i18n="nav_projects">
-    Projekte
-  </a>
-
-  <a class="button" href="#kontakt" data-i18n="nav_contact">
-    Kontakt
-  </a>
-
-</div>
+          <a class="button" href="#about" data-i18n="nav_about">Über mich</a>
+          <a class="button" href="#skills" data-i18n="nav_skills">Skills</a>
+          <a class="button" href="#projekte" data-i18n="nav_projects">Projekte</a>
+          <a class="button" href="#kontakt" data-i18n="nav_contact">Kontakt</a>
+        </div>
       </div>
 
       <div class="hero-image">
@@ -82,22 +68,20 @@
   </header>
 
   <section class="hidden" id="about">
-    <h2 class="section-title" data-i18n="section_about">
-  Über mich
-</h2>
+    <h2 class="section-title" data-i18n="section_about">Über mich</h2>
 
     <div class="skill-nav">
-      <button onclick="openModal('profileModal')">Profil</button>
-      <button onclick="openModal('focusModal')">Fokusbereiche</button>
-      <button onclick="openModal('experienceModal')">Erfahrung</button>
+      <button onclick="openModal('profileModal')" data-i18n="btn_profile">Profil</button>
+      <button onclick="openModal('focusModal')" data-i18n="btn_focus">Fokusbereiche</button>
+      <button onclick="openModal('experienceModal')" data-i18n="btn_experience">Erfahrung</button>
     </div>
   </section>
 
   <div id="profileModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('profileModal')">×</button>
-      <h3>Profil</h3>
-      <p>
+      <h3 data-i18n="modal_profile_title">Profil</h3>
+      <p data-i18n="modal_profile_text">
         Ich bin Senior IT Specialist mit über 5 Jahren Erfahrung in
         IT-Infrastruktur, Systemadministration und Support komplexer
         IT-Umgebungen.
@@ -108,13 +92,13 @@
   <div id="focusModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('focusModal')">×</button>
-      <h3>Fokusbereiche</h3>
+      <h3 data-i18n="modal_focus_title">Fokusbereiche</h3>
       <ul>
-        <li>Cloud Computing mit Microsoft Azure</li>
-        <li>Endpoint Management mit Microsoft Intune</li>
-        <li>IT-Security und Compliance</li>
-        <li>Automatisierung mit PowerShell</li>
-        <li>Hybride IT-Infrastrukturen</li>
+        <li data-i18n="modal_focus_1">Cloud Computing mit Microsoft Azure</li>
+        <li data-i18n="modal_focus_2">Endpoint Management mit Microsoft Intune</li>
+        <li data-i18n="modal_focus_3">IT-Security und Compliance</li>
+        <li data-i18n="modal_focus_4">Automatisierung mit PowerShell</li>
+        <li data-i18n="modal_focus_5">Hybride IT-Infrastrukturen</li>
       </ul>
     </div>
   </div>
@@ -122,8 +106,8 @@
   <div id="experienceModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('experienceModal')">×</button>
-      <h3>Erfahrung</h3>
-      <p>
+      <h3 data-i18n="modal_experience_title">Erfahrung</h3>
+      <p data-i18n="modal_experience_text">
         Erfahrung im Betrieb hybrider IT-Infrastrukturen, im 2nd/3rd Level Support,
         in Client-Management-Prozessen, Standortintegration, Security Management
         und Zusammenarbeit mit internationalen Teams.
@@ -132,31 +116,29 @@
   </div>
 
   <section class="hidden" id="skills">
-    <h2 class="section-title" data-i18n="section_skills">
-  Skills
-</h2>
+    <h2 class="section-title" data-i18n="section_skills">Skills</h2>
 
     <div class="skill-nav">
-      <button onclick="openModal('securityModal')">Security</button>
-      <button onclick="openModal('cloudModal')">Cloud</button>
-      <button onclick="openModal('endpointModal')">Endpoint Management</button>
-      <button onclick="openModal('networkModal')">Networking</button>
-      <button onclick="openModal('automationModal')">Automation</button>
-      <button onclick="openModal('supportModal')">Support</button>
-      <button onclick="openModal('systemsModal')">Systems</button>
+      <button onclick="openModal('securityModal')" data-i18n="btn_security">Security</button>
+      <button onclick="openModal('cloudModal')" data-i18n="btn_cloud">Cloud</button>
+      <button onclick="openModal('endpointModal')" data-i18n="btn_endpoint">Endpoint Management</button>
+      <button onclick="openModal('networkModal')" data-i18n="btn_network">Networking</button>
+      <button onclick="openModal('automationModal')" data-i18n="btn_automation">Automation</button>
+      <button onclick="openModal('supportModal')" data-i18n="btn_support">Support</button>
+      <button onclick="openModal('systemsModal')" data-i18n="btn_systems">Systems</button>
     </div>
   </section>
 
   <div id="securityModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('securityModal')">×</button>
-      <h3>IT Security & Compliance</h3>
+      <h3 data-i18n="modal_security_title">IT Security & Compliance</h3>
       <ul>
-        <li>Compliance Lifecycle Management</li>
-        <li>Patch- und Security-Management</li>
-        <li>Application Control und Application Blocking</li>
-        <li>BTPM Security Plattform Administration</li>
-        <li>Security Policies und Endpoint Protection</li>
+        <li data-i18n="modal_security_1">Compliance Lifecycle Management</li>
+        <li data-i18n="modal_security_2">Patch- und Security-Management</li>
+        <li data-i18n="modal_security_3">Application Control und Application Blocking</li>
+        <li data-i18n="modal_security_4">BTPM Security Plattform Administration</li>
+        <li data-i18n="modal_security_5">Security Policies und Endpoint Protection</li>
       </ul>
     </div>
   </div>
@@ -164,14 +146,14 @@
   <div id="cloudModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('cloudModal')">×</button>
-      <h3>Cloud & Infrastructure</h3>
+      <h3 data-i18n="modal_cloud_title">Cloud & Infrastructure</h3>
       <ul>
-        <li>Microsoft Azure Infrastruktur</li>
-        <li>Azure Virtual Machines</li>
-        <li>Azure Virtual Desktop</li>
-        <li>Microsoft Entra ID</li>
-        <li>Hybride IT-Infrastrukturen</li>
-        <li>Cloud Monitoring und Systembetrieb</li>
+        <li data-i18n="modal_cloud_1">Microsoft Azure Infrastruktur</li>
+        <li data-i18n="modal_cloud_2">Azure Virtual Machines</li>
+        <li data-i18n="modal_cloud_3">Azure Virtual Desktop</li>
+        <li data-i18n="modal_cloud_4">Microsoft Entra ID</li>
+        <li data-i18n="modal_cloud_5">Hybride IT-Infrastrukturen</li>
+        <li data-i18n="modal_cloud_6">Cloud Monitoring und Systembetrieb</li>
       </ul>
     </div>
   </div>
@@ -179,14 +161,14 @@
   <div id="endpointModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('endpointModal')">×</button>
-      <h3>Microsoft Intune & Endpoint Management</h3>
+      <h3 data-i18n="modal_endpoint_title">Microsoft Intune & Endpoint Management</h3>
       <ul>
-        <li>Microsoft Intune Administration</li>
-        <li>Device Management</li>
-        <li>Compliance Policies</li>
-        <li>Autopilot</li>
-        <li>Endpoint Security</li>
-        <li>Troubleshooting von Client-Systemen</li>
+        <li data-i18n="modal_endpoint_1">Microsoft Intune Administration</li>
+        <li data-i18n="modal_endpoint_2">Device Management</li>
+        <li data-i18n="modal_endpoint_3">Compliance Policies</li>
+        <li data-i18n="modal_endpoint_4">Autopilot</li>
+        <li data-i18n="modal_endpoint_5">Endpoint Security</li>
+        <li data-i18n="modal_endpoint_6">Troubleshooting von Client-Systemen</li>
       </ul>
     </div>
   </div>
@@ -194,12 +176,12 @@
   <div id="networkModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('networkModal')">×</button>
-      <h3>Networking</h3>
+      <h3 data-i18n="modal_network_title">Networking</h3>
       <ul>
-        <li>VPN, VLAN und Routing-Grundlagen</li>
-        <li>Cisco und Meraki Administration</li>
-        <li>Netzwerkdiagnose und Troubleshooting</li>
-        <li>Standortintegration und Infrastrukturaufbau</li>
+        <li data-i18n="modal_network_1">VPN, VLAN und Routing-Grundlagen</li>
+        <li data-i18n="modal_network_2">Cisco und Meraki Administration</li>
+        <li data-i18n="modal_network_3">Netzwerkdiagnose und Troubleshooting</li>
+        <li data-i18n="modal_network_4">Standortintegration und Infrastrukturaufbau</li>
       </ul>
     </div>
   </div>
@@ -207,12 +189,12 @@
   <div id="automationModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('automationModal')">×</button>
-      <h3>PowerShell & Automation</h3>
+      <h3 data-i18n="modal_automation_title">PowerShell & Automation</h3>
       <ul>
-        <li>PowerShell Automatisierung</li>
-        <li>Deployment Automation</li>
-        <li>Remediation Scripts</li>
-        <li>Optimierung administrativer Prozesse</li>
+        <li data-i18n="modal_automation_1">PowerShell Automatisierung</li>
+        <li data-i18n="modal_automation_2">Deployment Automation</li>
+        <li data-i18n="modal_automation_3">Remediation Scripts</li>
+        <li data-i18n="modal_automation_4">Optimierung administrativer Prozesse</li>
       </ul>
     </div>
   </div>
@@ -220,13 +202,13 @@
   <div id="supportModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('supportModal')">×</button>
-      <h3>Support & IT Operations</h3>
+      <h3 data-i18n="modal_support_title">Support & IT Operations</h3>
       <ul>
-        <li>2nd/3rd Level Support</li>
-        <li>Root Cause Analyse komplexer Incidents</li>
-        <li>ServiceNow Incident, Request und Change Management</li>
-        <li>SLA-Steuerung und Ticketbearbeitung</li>
-        <li>Rollouts, Migrationen und internationale Zusammenarbeit</li>
+        <li data-i18n="modal_support_1">2nd/3rd Level Support</li>
+        <li data-i18n="modal_support_2">Root Cause Analyse komplexer Incidents</li>
+        <li data-i18n="modal_support_3">ServiceNow Incident, Request und Change Management</li>
+        <li data-i18n="modal_support_4">SLA-Steuerung und Ticketbearbeitung</li>
+        <li data-i18n="modal_support_5">Rollouts, Migrationen und internationale Zusammenarbeit</li>
       </ul>
     </div>
   </div>
@@ -234,37 +216,35 @@
   <div id="systemsModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('systemsModal')">×</button>
-      <h3>Systems & Industrial IT</h3>
+      <h3 data-i18n="modal_systems_title">Systems & Industrial IT</h3>
       <ul>
-        <li>Windows Server & Clients</li>
-        <li>VMware und Citrix</li>
-        <li>Scanner, Drucker und Barcode-Prozesse</li>
-        <li>ERP-nahe Systeme</li>
-        <li>Hardware Rollouts und Client Management</li>
+        <li data-i18n="modal_systems_1">Windows Server & Clients</li>
+        <li data-i18n="modal_systems_2">VMware und Citrix</li>
+        <li data-i18n="modal_systems_3">Scanner, Drucker und Barcode-Prozesse</li>
+        <li data-i18n="modal_systems_4">ERP-nahe Systeme</li>
+        <li data-i18n="modal_systems_5">Hardware Rollouts und Client Management</li>
       </ul>
     </div>
   </div>
 
   <section class="hidden" id="projekte">
-    <h2 class="section-title" data-i18n="section_projects">
-  Projekte
-</h2>
+    <h2 class="section-title" data-i18n="section_projects">Projekte</h2>
 
     <div class="skill-nav">
-      <button onclick="openModal('portfolioModal')">Portfolio Website</button>
-      <button onclick="openModal('cloudLabModal')">Cloud & Infrastructure Lab</button>
+      <button onclick="openModal('portfolioModal')" data-i18n="btn_portfolio">Portfolio Website</button>
+      <button onclick="openModal('cloudLabModal')" data-i18n="btn_cloud_lab">Cloud & Infrastructure Lab</button>
     </div>
   </section>
 
   <div id="portfolioModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('portfolioModal')">×</button>
-      <h3>Portfolio Website</h3>
+      <h3 data-i18n="modal_portfolio_title">Portfolio Website</h3>
       <ul>
-        <li>Responsive Portfolio-Webseite mit HTML, CSS und JavaScript</li>
-        <li>Deployment über GitHub Pages</li>
-        <li>Moderne UI mit Glassmorphism, Modals und Animationen</li>
-        <li>Versionierung und Deployment mit Git und GitHub</li>
+        <li data-i18n="modal_portfolio_1">Responsive Portfolio-Webseite mit HTML, CSS und JavaScript</li>
+        <li data-i18n="modal_portfolio_2">Deployment über GitHub Pages</li>
+        <li data-i18n="modal_portfolio_3">Moderne UI mit Glassmorphism, Modals und Animationen</li>
+        <li data-i18n="modal_portfolio_4">Versionierung und Deployment mit Git und GitHub</li>
       </ul>
     </div>
   </div>
@@ -272,37 +252,35 @@
   <div id="cloudLabModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('cloudLabModal')">×</button>
-      <h3>Cloud & Infrastructure Lab</h3>
+      <h3 data-i18n="modal_cloud_lab_title">Cloud & Infrastructure Lab</h3>
       <ul>
-        <li>Persönliches Lernprojekt für Cloud- und Infrastrukturthemen</li>
-        <li>Fokus auf Azure, Intune, Security und Automatisierung</li>
-        <li>Aufbau technischer Dokumentation und Best Practices</li>
+        <li data-i18n="modal_cloud_lab_1">Persönliches Lernprojekt für Cloud- und Infrastrukturthemen</li>
+        <li data-i18n="modal_cloud_lab_2">Fokus auf Azure, Intune, Security und Automatisierung</li>
+        <li data-i18n="modal_cloud_lab_3">Aufbau technischer Dokumentation und Best Practices</li>
       </ul>
     </div>
   </div>
 
   <section class="hidden" id="kontakt">
-    <h2 class="section-title" data-i18n="section_contact">
-  Kontakt
-</h2>
+    <h2 class="section-title" data-i18n="section_contact">Kontakt</h2>
 
     <div class="skill-nav">
-      <button onclick="openModal('contactModal')">Kontaktdaten</button>
+      <button onclick="openModal('contactModal')" data-i18n="btn_contact_details">Kontaktdaten</button>
     </div>
   </section>
 
   <div id="contactModal" class="modal">
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal('contactModal')">×</button>
-      <h3>Kontakt</h3>
+      <h3 data-i18n="modal_contact_title">Kontakt</h3>
 
       <p>
-        <strong>Name:</strong><br>
+        <strong data-i18n="modal_contact_name">Name:</strong><br>
         Layth Altabal
       </p>
 
       <p>
-        <strong>Email:</strong><br>
+        <strong data-i18n="modal_contact_email">Email:</strong><br>
         <a href="mailto:Laithaltabal@outlook.de">
           Laithaltabal@outlook.de
         </a>
