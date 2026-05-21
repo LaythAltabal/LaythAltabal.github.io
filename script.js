@@ -383,3 +383,16 @@ function closeImageModal() {
     .getElementById("imageModal")
     .classList.remove("active");
 }
+document.addEventListener("keydown", (event) => {
+
+  if (event.key === "Escape") {
+
+    document
+      .querySelectorAll(".modal.active, .image-modal.active")
+      .forEach((modal) => {
+        modal.classList.remove("active");
+      });
+
+  }
+
+});
