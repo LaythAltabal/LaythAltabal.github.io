@@ -347,3 +347,74 @@ body.light-mode .site-controls select {
   color: #020617;
   background: rgba(2,6,23,0.06);
 }
+body.light-mode {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+body.light-mode .hero {
+  background:
+    radial-gradient(circle at top left, #2563eb22, transparent 30%),
+    radial-gradient(circle at bottom right, #7c3aed22, transparent 30%),
+    #f8fafc;
+}
+
+body.light-mode nav {
+  background: rgba(248, 250, 252, 0.85);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+body.light-mode .logo-text,
+body.light-mode .tag {
+  color: #2563eb;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode strong {
+  color: #0f172a;
+}
+
+body.light-mode p,
+body.light-mode .hero-content p,
+body.light-mode .card p,
+body.light-mode .modal-content li {
+  color: #334155;
+}
+
+body.light-mode .nav-links a {
+  color: #334155;
+}
+
+body.light-mode .nav-links a:hover {
+  color: #0f172a;
+}
+
+body.light-mode .card,
+body.light-mode .modal-content {
+  background: rgba(255, 255, 255, 0.92);
+  color: #0f172a;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+body.light-mode .skill-nav button,
+body.light-mode .site-controls button,
+body.light-mode .site-controls select {
+  background: rgba(15, 23, 42, 0.06);
+  color: #0f172a;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+body.light-mode .skill-nav button:hover {
+  background: #2563eb;
+  color: white;
+}
+
+body.light-mode .close-btn {
+  color: #0f172a;
+}
+
+body.light-mode footer {
+  color: #475569;
+}
