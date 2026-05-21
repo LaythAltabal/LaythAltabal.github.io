@@ -94,3 +94,10 @@ function setLanguage(lang) {
 languageSelect.addEventListener("change", (event) => {
   setLanguage(event.target.value);
 });
+function openModal(id) {
+  document.getElementById(id).classList.add("active");
+}
+
+function closeModal(id) {
+  document.getElementById(id).classList.remove("active");
+}
