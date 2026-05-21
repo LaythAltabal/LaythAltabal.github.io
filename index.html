@@ -60,16 +60,50 @@
   <section class="hidden" id="about">
     <h2 class="section-title">Über mich</h2>
 
-    <div class="card">
-      <p>
-        Ich bin Senior IT Specialist mit Schwerpunkt auf moderner
-        IT-Infrastruktur, Cloud Computing, Endpoint Management,
-        IT-Security und technischem Support. Mein Fokus liegt auf
-        stabilen, sicheren und effizienten IT-Lösungen für komplexe
-        Unternehmensumgebungen.
-      </p>
+    <div class="skill-nav">
+      <button onclick="openModal('profileModal')">Profil</button>
+      <button onclick="openModal('focusModal')">Fokusbereiche</button>
+      <button onclick="openModal('experienceModal')">Erfahrung</button>
     </div>
   </section>
+
+  <div id="profileModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('profileModal')">×</button>
+      <h3>Profil</h3>
+      <p>
+        Ich bin Senior IT Specialist mit über 5 Jahren Erfahrung in
+        IT-Infrastruktur, Systemadministration und Support komplexer
+        IT-Umgebungen.
+      </p>
+    </div>
+  </div>
+
+  <div id="focusModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('focusModal')">×</button>
+      <h3>Fokusbereiche</h3>
+      <ul>
+        <li>Cloud Computing mit Microsoft Azure</li>
+        <li>Endpoint Management mit Microsoft Intune</li>
+        <li>IT-Security und Compliance</li>
+        <li>Automatisierung mit PowerShell</li>
+        <li>Hybride IT-Infrastrukturen</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="experienceModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('experienceModal')">×</button>
+      <h3>Erfahrung</h3>
+      <p>
+        Erfahrung im Betrieb hybrider IT-Infrastrukturen, im 2nd/3rd Level Support,
+        in Client-Management-Prozessen, Standortintegration, Security Management
+        und Zusammenarbeit mit internationalen Teams.
+      </p>
+    </div>
+  </div>
 
   <section class="hidden" id="skills">
     <h2 class="section-title">Skills</h2>
@@ -186,29 +220,48 @@
   <section class="hidden" id="projekte">
     <h2 class="section-title">Projekte</h2>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>
-          Eigene responsive Portfolio-Webseite mit HTML, CSS,
-          JavaScript und GitHub Pages Deployment.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Cloud & Infrastructure Lab</h3>
-        <p>
-          Persönliches Lernprojekt mit Fokus auf Cloud,
-          Endpoint Management, Security und Automatisierung.
-        </p>
-      </div>
+    <div class="skill-nav">
+      <button onclick="openModal('portfolioModal')">Portfolio Website</button>
+      <button onclick="openModal('cloudLabModal')">Cloud & Infrastructure Lab</button>
     </div>
   </section>
+
+  <div id="portfolioModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('portfolioModal')">×</button>
+      <h3>Portfolio Website</h3>
+      <ul>
+        <li>Responsive Portfolio-Webseite mit HTML, CSS und JavaScript</li>
+        <li>Deployment über GitHub Pages</li>
+        <li>Moderne UI mit Glassmorphism, Modals und Animationen</li>
+        <li>Versionierung und Deployment mit Git und GitHub</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="cloudLabModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('cloudLabModal')">×</button>
+      <h3>Cloud & Infrastructure Lab</h3>
+      <ul>
+        <li>Persönliches Lernprojekt für Cloud- und Infrastrukturthemen</li>
+        <li>Fokus auf Azure, Intune, Security und Automatisierung</li>
+        <li>Aufbau technischer Dokumentation und Best Practices</li>
+      </ul>
+    </div>
+  </div>
 
   <section class="hidden" id="kontakt">
     <h2 class="section-title">Kontakt</h2>
 
-    <div class="card">
+    <div class="skill-nav">
+      <button onclick="openModal('contactModal')">Kontaktdaten</button>
+    </div>
+  </section>
+
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('contactModal')">×</button>
       <h3>Kontakt</h3>
 
       <p>
@@ -223,7 +276,7 @@
         </a>
       </p>
     </div>
-  </section>
+  </div>
 
   <footer>
     <p>© 2026 Layth Altabal</p>
