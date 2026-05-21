@@ -396,3 +396,22 @@ document.addEventListener("keydown", (event) => {
   }
 
 });
+window.addEventListener("click", (event) => {
+
+  document
+    .querySelectorAll(".modal.active")
+    .forEach((modal) => {
+
+      if (event.target === modal) {
+        modal.classList.remove("active");
+      }
+
+    });
+
+  const imageModal = document.getElementById("imageModal");
+
+  if (imageModal && event.target === imageModal) {
+    imageModal.classList.remove("active");
+  }
+
+});
