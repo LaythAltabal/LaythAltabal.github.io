@@ -372,3 +372,14 @@ function closeModal(id) {
     modal.classList.remove("active");
   }
 }
+function openImageModal() {
+  document
+    .getElementById("imageModal")
+    .classList.add("active");
+}
+
+function closeImageModal() {
+  document
+    .getElementById("imageModal")
+    .classList.remove("active");
+}

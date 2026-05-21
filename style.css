@@ -437,3 +437,60 @@ body.light-mode .site-controls select option {
   background: #ffffff;
   color: #0f172a;
 }
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.image-modal.active {
+  display: flex;
+}
+
+.image-modal-content {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 24px;
+  box-shadow:
+    0 0 60px rgba(37,99,235,0.35);
+
+  animation: zoomIn 0.25s ease;
+}
+
+.image-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 42px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.image-close:hover {
+  transform: scale(1.1);
+}
+
+.hero-image img {
+  cursor: pointer;
+}
+
+@keyframes zoomIn {
+
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}

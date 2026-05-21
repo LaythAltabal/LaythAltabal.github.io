@@ -62,8 +62,22 @@
       </div>
 
       <div class="hero-image">
-        <img src="profile.jpg" alt="Layth Altabal" />
-      </div>
+  <img
+    src="profile.jpg"
+    alt="Layth Altabal"
+    onclick="openImageModal()"
+  />
+</div>
+
+<div id="imageModal" class="image-modal">
+  <span class="image-close" onclick="closeImageModal()">×</span>
+
+  <img
+    class="image-modal-content"
+    src="profile.jpg"
+    alt="Layth Altabal"
+  />
+</div>
     </div>
   </header>
 
